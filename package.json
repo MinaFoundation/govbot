@@ -1,0 +1,39 @@
+{
+  "name": "mina-govbot",
+  "version": "0.0.1",
+  "description": "Discord bot for collective decision making for Mina Protocol",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/bot.js",
+    "dev": "ts-node-dev src/bot.ts",
+    "manage": "ts-node scripts/manage.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.8.2",
+    "@discordjs/core": "^1.2.0",
+    "@discordjs/rest": "^2.3.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/ws": "^8.5.10",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "@types/sqlite3": "^3.1.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.2"
+  }
+}
